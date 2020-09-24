@@ -1,24 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0Q-Ol-XbW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="BPb-gZ-ueQ" kind="show" identifier="registerPage" id="gp9-jA-Vqk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-891" y="116"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="VFA-yt-nkd">
+            <objects>
+                <viewController id="BPb-gZ-ueQ" customClass="RegisterVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBi-2R-eIL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3CU-bg-RoC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ITr-b5-fgw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJt-0D-hP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="116"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="KfK-UB-JSh">
+            <objects>
+                <viewController id="iHk-F2-FJl" customClass="SettingVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="54J-TA-9Yo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wae-Am-gbw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="設定" id="YDk-9p-f5R"/>
+                    <connections>
+                        <segue destination="2sy-lQ-ibM" kind="show" identifier="PersonalInfoVC" id="0Kv-Ji-h67"/>
+                        <segue destination="8XX-FV-tlW" kind="show" identifier="ColorVC" id="SyK-e0-4dJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpm-77-Y7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3403" y="1603"/>
+        </scene>
+        <!--主題顏色-->
+        <scene sceneID="BCJ-yh-WWY">
+            <objects>
+                <viewController storyboardIdentifier="ColorVC" id="8XX-FV-tlW" customClass="ColorVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMt-fg-FUv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M5L-ax-ORw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="主題顏色" id="scj-ML-bkC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C55-AI-YDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4241" y="2296"/>
+        </scene>
+        <!--個人資料-->
+        <scene sceneID="tPI-II-eIm">
+            <objects>
+                <viewController id="2sy-lQ-ibM" customClass="ProfileVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvl-Ao-dgR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t8E-jr-dLy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="個人資料" id="38x-vX-ixc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7am-3G-uZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3403" y="2296"/>
+        </scene>
+        <!--Info Of FriendVC-->
+        <scene sceneID="JA7-Qf-Ua2">
+            <objects>
+                <viewController id="FHo-Bd-a48" customClass="InfoOfFriendVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVM-IO-aHl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OhM-bV-Prw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uo0-uO-J3R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hF-FL-rdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="1622"/>
+        </scene>
+        <!--好友-->
+        <scene sceneID="cYh-Go-svy">
+            <objects>
+                <viewController id="58X-Dx-vmC" customClass="FriendVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b93-kE-A5K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e7G-cx-aL9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="好友" id="gXn-QP-cbS"/>
+                    <connections>
+                        <segue destination="W31-NM-sXS" kind="show" identifier="searchSegue" id="X86-W2-yu2"/>
+                        <segue destination="FHo-Bd-a48" kind="show" identifier="InfoOfFriend" id="IaW-Y8-WhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EY-Qx-Mxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="1622"/>
+        </scene>
+        <!--Add FriendVC-->
+        <scene sceneID="5bf-5r-kOV">
+            <objects>
+                <viewController id="W31-NM-sXS" customClass="AddFriendVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wel-aG-gll">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bSF-ZR-dSN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4a-Xf-UPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBS-XM-LVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="2362"/>
+        </scene>
+        <!--主頁-->
+        <scene sceneID="36n-zw-ap1">
+            <objects>
+                <viewController id="yMD-gZ-m79" customClass="FirstPageVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3HK-DN-k41">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aIA-Z1-WUW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="主頁" id="sYv-Yg-k2s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWQ-yO-8PH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="883"/>
+        </scene>
+        <!--MenuTBC-->
+        <scene sceneID="Aux-zO-H4u">
+            <objects>
+                <tabBarController storyboardIdentifier="MenuTBC" id="e0Q-Ol-XbW" customClass="MenuTBC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c2r-js-sCR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yMD-gZ-m79" kind="relationship" relationship="viewControllers" id="jON-Og-P6g"/>
+                        <segue destination="BVJ-xf-ThL" kind="relationship" relationship="viewControllers" id="yUM-5Y-XPt"/>
+                        <segue destination="xXd-ur-hvk" kind="relationship" relationship="viewControllers" id="I2H-f0-ATa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="at9-4N-PRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="116"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="kuE-Ko-eoP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xXd-ur-hvk" customClass="SettingNC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="設定" id="khs-QK-Hq7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXx-Fi-poq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iHk-F2-FJl" kind="relationship" relationship="rootViewController" id="TT0-aV-Ugq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuk-eD-TQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4313.04347826087" y="882.58928571428567"/>
+        </scene>
+        <!--好友-->
+        <scene sceneID="OuX-c2-OAa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BVJ-xf-ThL" customClass="FriendNC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="好友" id="DOu-PO-wtA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yIh-DC-7XO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="58X-Dx-vmC" kind="relationship" relationship="rootViewController" id="143-BQ-mqz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGr-a1-7sJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263.768115942029" y="882.58928571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

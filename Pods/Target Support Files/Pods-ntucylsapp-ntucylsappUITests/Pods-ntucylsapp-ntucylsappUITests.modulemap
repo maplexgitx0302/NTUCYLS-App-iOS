@@ -1,0 +1,6 @@
+framework module Pods_ntucylsapp_ntucylsappUITests {
+  umbrella header "Pods-ntucylsapp-ntucylsappUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

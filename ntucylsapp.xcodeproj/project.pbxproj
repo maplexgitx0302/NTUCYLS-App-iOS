@@ -3,18 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207E1C2EDE14C6689EDFA7BE /* Pods_ntucylsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226E10B9C79370DD800153DE /* Pods_ntucylsapp.framework */; };
+		BDD772DFB80E96BFE814D40B /* Pods_ntucylsapp_ntucylsappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7F92D1B7DDA5A450E2D930 /* Pods_ntucylsapp_ntucylsappUITests.framework */; };
+		C8C37DC0812E51313C3C26F8 /* Pods_ntucylsappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965DD6E76009ACC7DCE00EB /* Pods_ntucylsappTests.framework */; };
+		D80A6D71251BC0B90099F66E /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A6D70251BC0B90099F66E /* LoadingSpinner.swift */; };
+		D80A6D76251C957D0099F66E /* InfoOfFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A6D75251C957C0099F66E /* InfoOfFriendVC.swift */; };
 		D80BDE002510B03C003F3AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDDFF2510B03C003F3AB0 /* AppDelegate.swift */; };
 		D80BDE022510B03C003F3AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE012510B03C003F3AB0 /* SceneDelegate.swift */; };
-		D80BDE042510B03C003F3AB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE032510B03C003F3AB0 /* ViewController.swift */; };
 		D80BDE072510B03C003F3AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80BDE052510B03C003F3AB0 /* Main.storyboard */; };
 		D80BDE092510B03E003F3AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80BDE082510B03E003F3AB0 /* Assets.xcassets */; };
 		D80BDE0C2510B03E003F3AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80BDE0A2510B03E003F3AB0 /* LaunchScreen.storyboard */; };
 		D80BDE172510B03E003F3AB0 /* ntucylsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE162510B03E003F3AB0 /* ntucylsappTests.swift */; };
 		D80BDE222510B03E003F3AB0 /* ntucylsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE212510B03E003F3AB0 /* ntucylsappUITests.swift */; };
+		D80BDE342510B624003F3AB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D80BDE332510B624003F3AB0 /* GoogleService-Info.plist */; };
+		D80BDE372510B90D003F3AB0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE362510B90D003F3AB0 /* LoginVC.swift */; };
+		D80BDE3A2510D766003F3AB0 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE392510D766003F3AB0 /* RegisterVC.swift */; };
+		D80BDE3C2510D979003F3AB0 /* bamboo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D80BDE3B2510D978003F3AB0 /* bamboo.ttf */; };
+		D80BDE432510E162003F3AB0 /* ButtonSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE422510E162003F3AB0 /* ButtonSetup.swift */; };
+		D80BDE452510F8E6003F3AB0 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE442510F8E6003F3AB0 /* Note.swift */; };
+		D80BDE472511DF70003F3AB0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE462511DF6F003F3AB0 /* Extensions.swift */; };
+		D80BDE492511EAB1003F3AB0 /* TextFieldSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BDE482511EAB1003F3AB0 /* TextFieldSetup.swift */; };
+		D814A24B25122085006DCE44 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814A24A25122085006DCE44 /* Profile.swift */; };
+		D814A25025126499006DCE44 /* MenuTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814A24F25126499006DCE44 /* MenuTBC.swift */; };
+		D814A2522512665A006DCE44 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814A2512512665A006DCE44 /* Alert.swift */; };
+		D814A2542512827F006DCE44 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814A2532512827F006DCE44 /* SettingVC.swift */; };
+		D81C160A2518DA0300A7E436 /* FriendNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C16092518DA0300A7E436 /* FriendNC.swift */; };
+		D83FF6B225134FF600513144 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FF6B125134FF600513144 /* Colors.swift */; };
+		D83FF6B52513658B00513144 /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FF6B42513658B00513144 /* FriendVC.swift */; };
+		D83FF6B7251365A100513144 /* FirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FF6B6251365A100513144 /* FirstPageVC.swift */; };
+		D83FF6BA251366AC00513144 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FF6B9251366AC00513144 /* ProfileVC.swift */; };
+		D83FF6BC2513676300513144 /* SettingNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FF6BB2513676300513144 /* SettingNC.swift */; };
+		D83FF6BE251385E700513144 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FF6BD251385E700513144 /* ColorVC.swift */; };
+		D850D8572519CB1E0057FE56 /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850D8562519CB1E0057FE56 /* AddFriendVC.swift */; };
+		D8703D2D2511F8260098C9C7 /* sonti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8703D2C2511F8260098C9C7 /* sonti.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +60,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		165EAC5AECAC038CF20D1851 /* Pods-ntucylsappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ntucylsappTests.debug.xcconfig"; path = "Target Support Files/Pods-ntucylsappTests/Pods-ntucylsappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		226E10B9C79370DD800153DE /* Pods_ntucylsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ntucylsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3437AC3777D2AC4CE8AF24E5 /* Pods-ntucylsapp-ntucylsappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ntucylsapp-ntucylsappUITests.debug.xcconfig"; path = "Target Support Files/Pods-ntucylsapp-ntucylsappUITests/Pods-ntucylsapp-ntucylsappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6965DD6E76009ACC7DCE00EB /* Pods_ntucylsappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ntucylsappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCEAF839FA2194A8A1DDDB3 /* Pods-ntucylsappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ntucylsappTests.release.xcconfig"; path = "Target Support Files/Pods-ntucylsappTests/Pods-ntucylsappTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C678B941991C1EF04928218 /* Pods-ntucylsapp-ntucylsappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ntucylsapp-ntucylsappUITests.release.xcconfig"; path = "Target Support Files/Pods-ntucylsapp-ntucylsappUITests/Pods-ntucylsapp-ntucylsappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B06DD94D7C3A656F051EA2C7 /* Pods-ntucylsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ntucylsapp.release.xcconfig"; path = "Target Support Files/Pods-ntucylsapp/Pods-ntucylsapp.release.xcconfig"; sourceTree = "<group>"; };
+		CB7F92D1B7DDA5A450E2D930 /* Pods_ntucylsapp_ntucylsappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ntucylsapp_ntucylsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80A6D70251BC0B90099F66E /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		D80A6D75251C957C0099F66E /* InfoOfFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOfFriendVC.swift; sourceTree = "<group>"; };
 		D80BDDFC2510B03C003F3AB0 /* ntucylsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ntucylsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80BDDFF2510B03C003F3AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80BDE012510B03C003F3AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D80BDE032510B03C003F3AB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D80BDE062510B03C003F3AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D80BDE082510B03E003F3AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80BDE0B2510B03E003F3AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +83,28 @@
 		D80BDE1D2510B03E003F3AB0 /* ntucylsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ntucylsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80BDE212510B03E003F3AB0 /* ntucylsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ntucylsappUITests.swift; sourceTree = "<group>"; };
 		D80BDE232510B03E003F3AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80BDE332510B624003F3AB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D80BDE362510B90D003F3AB0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D80BDE392510D766003F3AB0 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		D80BDE3B2510D978003F3AB0 /* bamboo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bamboo.ttf; sourceTree = "<group>"; };
+		D80BDE422510E162003F3AB0 /* ButtonSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSetup.swift; sourceTree = "<group>"; };
+		D80BDE442510F8E6003F3AB0 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D80BDE462511DF6F003F3AB0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D80BDE482511EAB1003F3AB0 /* TextFieldSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSetup.swift; sourceTree = "<group>"; };
+		D814A24A25122085006DCE44 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D814A24F25126499006DCE44 /* MenuTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTBC.swift; sourceTree = "<group>"; };
+		D814A2512512665A006DCE44 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D814A2532512827F006DCE44 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		D81C16092518DA0300A7E436 /* FriendNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendNC.swift; sourceTree = "<group>"; };
+		D83FF6B125134FF600513144 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D83FF6B42513658B00513144 /* FriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
+		D83FF6B6251365A100513144 /* FirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageVC.swift; sourceTree = "<group>"; };
+		D83FF6B9251366AC00513144 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		D83FF6BB2513676300513144 /* SettingNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNC.swift; sourceTree = "<group>"; };
+		D83FF6BD251385E700513144 /* ColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
+		D850D8562519CB1E0057FE56 /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
+		D8703D2C2511F8260098C9C7 /* sonti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonti.ttf; sourceTree = "<group>"; };
+		DD1985669130939CEEAE7109 /* Pods-ntucylsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ntucylsapp.debug.xcconfig"; path = "Target Support Files/Pods-ntucylsapp/Pods-ntucylsapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207E1C2EDE14C6689EDFA7BE /* Pods_ntucylsapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C37DC0812E51313C3C26F8 /* Pods_ntucylsappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +128,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD772DFB80E96BFE814D40B /* Pods_ntucylsapp_ntucylsappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7390334AED26303739D49C53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD1985669130939CEEAE7109 /* Pods-ntucylsapp.debug.xcconfig */,
+				B06DD94D7C3A656F051EA2C7 /* Pods-ntucylsapp.release.xcconfig */,
+				3437AC3777D2AC4CE8AF24E5 /* Pods-ntucylsapp-ntucylsappUITests.debug.xcconfig */,
+				7C678B941991C1EF04928218 /* Pods-ntucylsapp-ntucylsappUITests.release.xcconfig */,
+				165EAC5AECAC038CF20D1851 /* Pods-ntucylsappTests.debug.xcconfig */,
+				6DCEAF839FA2194A8A1DDDB3 /* Pods-ntucylsappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEB0237865E08C53AC22B5D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				226E10B9C79370DD800153DE /* Pods_ntucylsapp.framework */,
+				CB7F92D1B7DDA5A450E2D930 /* Pods_ntucylsapp_ntucylsappUITests.framework */,
+				6965DD6E76009ACC7DCE00EB /* Pods_ntucylsappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D80BDDF32510B03C003F3AB0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +165,8 @@
 				D80BDE152510B03E003F3AB0 /* ntucylsappTests */,
 				D80BDE202510B03E003F3AB0 /* ntucylsappUITests */,
 				D80BDDFD2510B03C003F3AB0 /* Products */,
+				7390334AED26303739D49C53 /* Pods */,
+				AEB0237865E08C53AC22B5D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +183,19 @@
 		D80BDDFE2510B03C003F3AB0 /* ntucylsapp */ = {
 			isa = PBXGroup;
 			children = (
+				D80BDE052510B03C003F3AB0 /* Main.storyboard */,
+				D80BDE0A2510B03E003F3AB0 /* LaunchScreen.storyboard */,
+				D80BDE442510F8E6003F3AB0 /* Note.swift */,
+				D80BDE462511DF6F003F3AB0 /* Extensions.swift */,
+				D83FF6B32513500A00513144 /* Constants */,
+				D80BDE412510E113003F3AB0 /* Objects */,
+				D80BDE352510B8F9003F3AB0 /* ViewControllers */,
+				D80BDE082510B03E003F3AB0 /* Assets.xcassets */,
+				D80BDE3D2510D988003F3AB0 /* Font */,
+				D80BDE0D2510B03E003F3AB0 /* Info.plist */,
+				D80BDE332510B624003F3AB0 /* GoogleService-Info.plist */,
 				D80BDDFF2510B03C003F3AB0 /* AppDelegate.swift */,
 				D80BDE012510B03C003F3AB0 /* SceneDelegate.swift */,
-				D80BDE032510B03C003F3AB0 /* ViewController.swift */,
-				D80BDE052510B03C003F3AB0 /* Main.storyboard */,
-				D80BDE082510B03E003F3AB0 /* Assets.xcassets */,
-				D80BDE0A2510B03E003F3AB0 /* LaunchScreen.storyboard */,
-				D80BDE0D2510B03E003F3AB0 /* Info.plist */,
 			);
 			path = ntucylsapp;
 			sourceTree = "<group>";
@@ -128,6 +218,86 @@
 			path = ntucylsappUITests;
 			sourceTree = "<group>";
 		};
+		D80BDE352510B8F9003F3AB0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D80BDE382510D6F0003F3AB0 /* Account */,
+				D814A24C25126395006DCE44 /* Menu */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D80BDE382510D6F0003F3AB0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D80BDE362510B90D003F3AB0 /* LoginVC.swift */,
+				D80BDE392510D766003F3AB0 /* RegisterVC.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D80BDE3D2510D988003F3AB0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D8703D2C2511F8260098C9C7 /* sonti.ttf */,
+				D80BDE3B2510D978003F3AB0 /* bamboo.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		D80BDE412510E113003F3AB0 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D814A2512512665A006DCE44 /* Alert.swift */,
+				D80BDE422510E162003F3AB0 /* ButtonSetup.swift */,
+				D80BDE482511EAB1003F3AB0 /* TextFieldSetup.swift */,
+				D80A6D70251BC0B90099F66E /* LoadingSpinner.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D814A24C25126395006DCE44 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D814A24F25126499006DCE44 /* MenuTBC.swift */,
+				D83FF6B6251365A100513144 /* FirstPageVC.swift */,
+				D81C16082518D9DA00A7E436 /* Friend */,
+				D83FF6B82513667F00513144 /* Setting */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D81C16082518D9DA00A7E436 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				D81C16092518DA0300A7E436 /* FriendNC.swift */,
+				D83FF6B42513658B00513144 /* FriendVC.swift */,
+				D850D8562519CB1E0057FE56 /* AddFriendVC.swift */,
+				D80A6D75251C957C0099F66E /* InfoOfFriendVC.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		D83FF6B32513500A00513144 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D814A24A25122085006DCE44 /* Profile.swift */,
+				D83FF6B125134FF600513144 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D83FF6B82513667F00513144 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D83FF6BB2513676300513144 /* SettingNC.swift */,
+				D814A2532512827F006DCE44 /* SettingVC.swift */,
+				D83FF6BD251385E700513144 /* ColorVC.swift */,
+				D83FF6B9251366AC00513144 /* ProfileVC.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80BDE262510B03E003F3AB0 /* Build configuration list for PBXNativeTarget "ntucylsapp" */;
 			buildPhases = (
+				01F2885977A7F9D4F590DDB9 /* [CP] Check Pods Manifest.lock */,
 				D80BDDF82510B03C003F3AB0 /* Sources */,
 				D80BDDF92510B03C003F3AB0 /* Frameworks */,
 				D80BDDFA2510B03C003F3AB0 /* Resources */,
+				D89DAEFC0771686F83585061 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80BDE292510B03E003F3AB0 /* Build configuration list for PBXNativeTarget "ntucylsappTests" */;
 			buildPhases = (
+				A593B95EE6C76C3ACD46D7A5 /* [CP] Check Pods Manifest.lock */,
 				D80BDE0E2510B03E003F3AB0 /* Sources */,
 				D80BDE0F2510B03E003F3AB0 /* Frameworks */,
 				D80BDE102510B03E003F3AB0 /* Resources */,
@@ -170,9 +343,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80BDE2C2510B03E003F3AB0 /* Build configuration list for PBXNativeTarget "ntucylsappUITests" */;
 			buildPhases = (
+				F0F672FC0628B0DB96E22508 /* [CP] Check Pods Manifest.lock */,
 				D80BDE192510B03E003F3AB0 /* Sources */,
 				D80BDE1A2510B03E003F3AB0 /* Frameworks */,
 				D80BDE1B2510B03E003F3AB0 /* Resources */,
+				1BCD066B592082E25F8DB481 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,7 +366,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Yian Chen";
 				TargetAttributes = {
 					D80BDDFB2510B03C003F3AB0 = {
@@ -233,8 +408,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D80BDE0C2510B03E003F3AB0 /* LaunchScreen.storyboard in Resources */,
+				D80BDE342510B624003F3AB0 /* GoogleService-Info.plist in Resources */,
 				D80BDE092510B03E003F3AB0 /* Assets.xcassets in Resources */,
 				D80BDE072510B03C003F3AB0 /* Main.storyboard in Resources */,
+				D8703D2D2511F8260098C9C7 /* sonti.ttf in Resources */,
+				D80BDE3C2510D979003F3AB0 /* bamboo.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +432,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01F2885977A7F9D4F590DDB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ntucylsapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BCD066B592082E25F8DB481 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ntucylsapp-ntucylsappUITests/Pods-ntucylsapp-ntucylsappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ntucylsapp-ntucylsappUITests/Pods-ntucylsapp-ntucylsappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ntucylsapp-ntucylsappUITests/Pods-ntucylsapp-ntucylsappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A593B95EE6C76C3ACD46D7A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ntucylsappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89DAEFC0771686F83585061 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ntucylsapp/Pods-ntucylsapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ntucylsapp/Pods-ntucylsapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ntucylsapp/Pods-ntucylsapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F672FC0628B0DB96E22508 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ntucylsapp-ntucylsappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D80BDDF82510B03C003F3AB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80BDE042510B03C003F3AB0 /* ViewController.swift in Sources */,
+				D80BDE432510E162003F3AB0 /* ButtonSetup.swift in Sources */,
+				D814A2542512827F006DCE44 /* SettingVC.swift in Sources */,
+				D80BDE492511EAB1003F3AB0 /* TextFieldSetup.swift in Sources */,
+				D80BDE372510B90D003F3AB0 /* LoginVC.swift in Sources */,
+				D80BDE3A2510D766003F3AB0 /* RegisterVC.swift in Sources */,
+				D80A6D71251BC0B90099F66E /* LoadingSpinner.swift in Sources */,
+				D83FF6B7251365A100513144 /* FirstPageVC.swift in Sources */,
+				D850D8572519CB1E0057FE56 /* AddFriendVC.swift in Sources */,
 				D80BDE002510B03C003F3AB0 /* AppDelegate.swift in Sources */,
 				D80BDE022510B03C003F3AB0 /* SceneDelegate.swift in Sources */,
+				D814A25025126499006DCE44 /* MenuTBC.swift in Sources */,
+				D81C160A2518DA0300A7E436 /* FriendNC.swift in Sources */,
+				D83FF6BA251366AC00513144 /* ProfileVC.swift in Sources */,
+				D83FF6B225134FF600513144 /* Colors.swift in Sources */,
+				D80BDE452510F8E6003F3AB0 /* Note.swift in Sources */,
+				D814A2522512665A006DCE44 /* Alert.swift in Sources */,
+				D814A24B25122085006DCE44 /* Profile.swift in Sources */,
+				D83FF6BE251385E700513144 /* ColorVC.swift in Sources */,
+				D83FF6B52513658B00513144 /* FriendVC.swift in Sources */,
+				D80A6D76251C957D0099F66E /* InfoOfFriendVC.swift in Sources */,
+				D83FF6BC2513676300513144 /* SettingNC.swift in Sources */,
+				D80BDE472511DF70003F3AB0 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +642,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,6 +703,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -420,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,11 +734,13 @@
 		};
 		D80BDE272510B03E003F3AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1985669130939CEEAE7109 /* Pods-ntucylsapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XFNUW94GJL;
 				INFOPLIST_FILE = ntucylsapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +754,13 @@
 		};
 		D80BDE282510B03E003F3AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06DD94D7C3A656F051EA2C7 /* Pods-ntucylsapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XFNUW94GJL;
 				INFOPLIST_FILE = ntucylsapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +774,7 @@
 		};
 		D80BDE2A2510B03E003F3AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 165EAC5AECAC038CF20D1851 /* Pods-ntucylsappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +797,7 @@
 		};
 		D80BDE2B2510B03E003F3AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCEAF839FA2194A8A1DDDB3 /* Pods-ntucylsappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +820,7 @@
 		};
 		D80BDE2D2510B03E003F3AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3437AC3777D2AC4CE8AF24E5 /* Pods-ntucylsapp-ntucylsappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +841,7 @@
 		};
 		D80BDE2E2510B03E003F3AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C678B941991C1EF04928218 /* Pods-ntucylsapp-ntucylsappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
