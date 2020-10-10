@@ -26,7 +26,7 @@ class ProfileVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         let scrollview = scrollView()
         //set dynamic scrollview , photoview , upload button
         let oneview = oneView(scrollview: scrollview)
-        let photo = photoview(oneview: oneview)
+        photoview(oneview: oneview)
         let uploadButton = uploadPhotoBUtton(oneview: oneview, imageview: photo)
         
         // add loading spinner
@@ -46,7 +46,7 @@ class ProfileVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
                 DispatchQueue.main.async {
                     let imageData = try? Data(contentsOf: profileURL!)
                     let image = UIImage(data: imageData!)
-                    photo.image = image
+                    self.photo.image = image
                     self.loadingSpinner.stopSpinning()
                 }
             }else{
@@ -123,16 +123,15 @@ class ProfileVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         return oneview
     }
     
-    func photoview(oneview: UIView)->UIImageView{
-        let imageview = UIImageView()
-        oneview.addSubview(imageview)
-        imageview.translatesAutoresizingMaskIntoConstraints = false
-        imageview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        imageview.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.6).isActive = true
-        imageview.heightAnchor.constraint(equalTo: imageview.widthAnchor).isActive = true
-        imageview.topAnchor.constraint(equalTo: oneview.topAnchor, constant: 30).isActive = true
-        imageview.contentMode = .scaleAspectFit
-        return imageview
+    private let photo = UIImageView()
+    func photoview(oneview: UIView){
+        oneview.addSubview(photo)
+        photo.translatesAutoresizingMaskIntoConstraints = false
+        photo.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        photo.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.6).isActive = true
+        photo.heightAnchor.constraint(equalTo: photo.widthAnchor).isActive = true
+        photo.topAnchor.constraint(equalTo: oneview.topAnchor, constant: 30).isActive = true
+        photo.contentMode = .scaleAspectFit
     }
     
     func uploadPhotoBUtton(oneview: UIView, imageview: UIImageView)->UIButton{
@@ -209,7 +208,7 @@ class ProfileVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
             // enable user to modify
             for i in 0...fieldArray.count-1 { fieldArray[i].isUserInteractionEnabled = true }
         }else{
-            let alert = UIAlertController(title: "是否儲存修改？", message: "Do you want to save.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "是否儲存修改？\nSave it?", message: "請勿上傳任何有關性暗示、暴力、毒品、犯罪等不當內容，違者查核後將遭停權使用。\nPlease do NOT upload any material contains mature/suggestive themes, violence, drug, crime, etc. Violators will be suspended.", preferredStyle: .alert)
             // if they save, save it
             alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { (UIAlertAction) in
                 for i in 0...fieldArray.count-1{
@@ -242,11 +241,16 @@ class ProfileVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     // start to let user choose photo from their photo library
     @objc func uploadTouched(_sender: UIButton){
-        let picker = UIImagePickerController()
-        picker.sourceType = .photoLibrary
-        picker.delegate = self
-        picker.allowsEditing = true
-        present(picker, animated: true)
+        let alert = UIAlertController(title: "「台大鄉服」想取用您的照片\n\"NTUCYLS\" would like to access your Photos", message: "允許「台大鄉服」進入您的相簿，待您選定照片後將會上傳，作為大頭貼運途使用。請勿上傳任何有關性暗示、暴力、毒品、犯罪等不當內容，違者查核後將遭停權使用。\nEnable \"NTUCYLS\"to access your camera roll to upload your photos and save ones you've taken with tha app for your profile image. Please do NOT upload any material contains mature/suggestive themes, violence, drug, crime, etc. Violators will be suspended.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Allow", style: .default, handler: {_ in
+            let picker = UIImagePickerController()
+            picker.sourceType = .photoLibrary
+            picker.delegate = self
+            picker.allowsEditing = true
+            self.present(picker, animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         picker.dismiss(animated: true, completion: nil)
@@ -256,6 +260,7 @@ class ProfileVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         guard let imageDate = image.jpegData(compressionQuality: 0) else{
             return
         }
+        photo.image = image
         storage.child("profile_photo/\(Profile.account).jpeg").putData(imageDate, metadata: nil) { (_, error) in
             guard error == nil else{
                 print(error!)

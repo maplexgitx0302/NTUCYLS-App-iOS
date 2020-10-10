@@ -36,5 +36,4 @@ import Foundation
 
 
 //給外校生。直接後台＋email
-//登入帳號前需加上 "cyls_"
 //須從後台幫她從friends開通

@@ -167,8 +167,8 @@ class AddFriendVC: UIViewController, UITextFieldDelegate {
     @objc func addTouched(_sender: AddButton){
         if _sender.alpha != 0 {
             db.collection("invitation").document(Profile.account).updateData([_sender.inviterID : FieldValue.delete()])
-            db.collection("friends").document(Profile.account).setData([_sender.inviterID!: _sender.inviterValue!], merge: true)
-            db.collection("friends").document(_sender.inviterID!).setData([Profile.account: "\(Profile.name ?? "name")" + "  " + "\(Profile.grade ?? "grade")"], merge: true)
+            db.collection("friends").document(Profile.account).setData([_sender.inviterID!: _sender.inviterID!], merge: true)
+            db.collection("friends").document(_sender.inviterID!).setData([Profile.account:Profile.account], merge: true)
             _sender.alpha = 0
             self.deleteButtonDic[_sender.inviterID!]?.alpha = 0
         }
@@ -202,8 +202,8 @@ class AddFriendVC: UIViewController, UITextFieldDelegate {
                                         Alerts.defaultAlert(title: "已經是好友囉～", message: "好朋友只是朋友", UIvc: self)
                                     }else{
                                         //send successful invite
+                                        let sendInfo = Profile.account + "  " + Profile.name!
                                         let target_invitation = db.collection("invitation").document(profileID!)
-                                        let sendInfo = "\(Profile.name ?? "name")" + "  " + "\(Profile.grade ?? "grade")"
                                         target_invitation.setData([Profile.account: sendInfo], merge: true)
                                         Alerts.defaultAlert(title: "已送出邀請", message:"等對方確認後，即會出現在好友列表喔！", UIvc: self)
                                     }
@@ -244,7 +244,7 @@ class AddFriendVC: UIViewController, UITextFieldDelegate {
                                             Alerts.defaultAlert(title: "Error", message: err.localizedDescription, UIvc: self)
                                         } else {
                                             var existBool = false //check if this one exist
-                                            let sendInfo = "\(Profile.name ?? "name")" + "  " + "\(Profile.grade ?? "grade")"
+                                            let sendInfo = Profile.account + "  " + Profile.name!
                                             for document in querySnapshot!.documents {
                                                 db.collection("invitation").document(document.documentID).setData([Profile.account: sendInfo], merge: true)
                                                 existBool = true

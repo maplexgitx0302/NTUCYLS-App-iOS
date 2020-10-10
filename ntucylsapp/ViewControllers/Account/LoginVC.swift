@@ -25,7 +25,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         //textfield and buttons initialization
         accountField.delegate = self //to dismiss keyboard
         passwordField.delegate = self //to dismiss keyboard
-        TextfieldSetup.defaultType(textfield: accountField, view: view, placeholder: "Account (ex: r08222011)")
+        TextfieldSetup.defaultType(textfield: accountField, view: view, placeholder: "Account ID")
         TextfieldSetup.defaultType(textfield: passwordField, view: view, placeholder: "Password")
         ButtonSetup.loginButton(button: registerButton, view: view, text: "Register")//apperance
         ButtonSetup.loginButton(button: loginButton, view: view, text: "Sign in")//appearance
@@ -158,6 +158,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     self.view.window?.rootViewController = directView
                     self.view.window?.makeKeyAndVisible()
                     self.loadingSpinner.stopSpinning()
+                    
+                    //*******************get block list*******************
+                    db.collection("block").document(Profile.account).getDocument { (blocklist,blockerr) in
+                        if let blocklist = blocklist, blocklist.exists{
+                            FriendLocalDefault.blockDictionary = blocklist.data()!
+                        }
+                    }
+                    //*******************get block list*******************
                 }else{
                     self.loadingSpinner.stopSpinning()
                     Alerts.defaultAlert(title: "帳號未認證", message: "Please check your email is verified.", UIvc: self)

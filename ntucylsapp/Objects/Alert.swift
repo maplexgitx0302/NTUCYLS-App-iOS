@@ -20,7 +20,7 @@ struct Alerts{
     // alert for double check
     static func logoutAlert(title: String, message: String, UIvc: UIViewController){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: {UIAlertAction in
+        alert.addAction(UIAlertAction(title: "Continue", style: .destructive, handler: {UIAlertAction in
             //change view to sign in view
             let directView = UIvc.storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginVC
             UIvc.view.window?.rootViewController = directView

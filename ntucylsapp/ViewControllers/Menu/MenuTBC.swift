@@ -13,8 +13,9 @@ class MenuTBC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.barTintColor = colors.defaultLightUIColor()
-        tabBar.tintColor = .black
-        tabBar.unselectedItemTintColor = .white
+        tabBar.tintColor = .white
+        tabBar.unselectedItemTintColor = .systemGray3
+        tabBar.contentMode = .scaleAspectFit
     }
 
 }

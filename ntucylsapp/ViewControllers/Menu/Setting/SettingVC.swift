@@ -22,14 +22,14 @@ class SettingVC: UIViewController {
         centerBlock.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
         // set out all blocks
-        let block11 = settingBlock(title: "個人資料", iconName: "", performSegueTo: "PersonalInfoVC")
-        let block12 = settingBlock(title: "主題顏色", iconName: "", performSegueTo: "ColorVC")
-        let block13 = settingBlock(title: "登出", iconName: "", performSegueTo: "LogOut")
-        let block21 = settingBlock(title: "21", iconName: "", performSegueTo: "")
-        let block23 = settingBlock(title: "23", iconName: "", performSegueTo: "")
-        let block31 = settingBlock(title: "31", iconName: "", performSegueTo: "")
-        let block32 = settingBlock(title: "32", iconName: "", performSegueTo: "")
-        let block33 = settingBlock(title: "33", iconName: "", performSegueTo: "")
+        let block11 = settingBlock(title: "個人資料", iconName: "icon_profile", performSegueTo: "PersonalInfoVC")
+        let block12 = settingBlock(title: "主題顏色", iconName: "paint", performSegueTo: "ColorVC")
+        let block13 = settingBlock(title: "登出", iconName: "icon_logout", performSegueTo: "LogOut")
+        let block21 = settingBlock(title: "鄉服PTT", iconName: "terminal", performSegueTo: "PTT")
+        let block23 = settingBlock(title: "瑞峰平面圖", iconName: "map", performSegueTo: "Map")
+        let block31 = settingBlock(title: "問題回報", iconName: "question", performSegueTo: "Problem")
+        let block32 = settingBlock(title: "聯絡我們", iconName: "contact", performSegueTo: "Contact")
+        let block33 = settingBlock(title: "關於APP", iconName: "info", performSegueTo: "About")
         ThreeByThreeBLocks(b11: block11, b12: block12, b13: block13, b21: block21, b23: block23, b31: block31, b32: block32, b33: block33, center: centerBlock)
         
         // add target
@@ -61,8 +61,17 @@ class SettingVC: UIViewController {
     @objc func blockTouched(_sender: blockButton){
         if _sender.performSegueTo == "LogOut"{
             Alerts.logoutAlert(title: "確定要登出嗎？", message: "Are you sure to log out?", UIvc: self)
-        }else if _sender.performSegueTo == ""{
-            Alerts.defaultAlert(title: "尚未開放", message: "Not Available", UIvc: self)
+        }else if _sender.performSegueTo == "About"{
+            Alerts.defaultAlert(title: "About", message: APPINFORMATION, UIvc: self)
+        }else if _sender.performSegueTo == "Contact"{
+            let alert = UIAlertController(title: "瀏覽器開啟", message: "即將開啟瀏覽器導向「台大鄉服」 Facebook 粉絲專頁", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {
+                _ in
+                let FBurl = URL(string: "https://www.facebook.com/NTUCYLS")
+                UIApplication.shared.open(FBurl!)
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }else{
             performSegue(withIdentifier: _sender.performSegueTo!, sender: self)
         }
@@ -84,12 +93,31 @@ class SettingVC: UIViewController {
         let icon = UIImageView()
         button.addSubview(icon)
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.widthAnchor.constraint(equalTo: button.widthAnchor, multiplier: 0.65).isActive = true
+        icon.widthAnchor.constraint(equalTo: button.widthAnchor, multiplier: 0.5).isActive = true
         icon.heightAnchor.constraint(equalTo: icon.widthAnchor).isActive = true
-        icon.topAnchor.constraint(equalTo: button.topAnchor, constant: 5).isActive = true
+        icon.topAnchor.constraint(equalTo: button.topAnchor, constant: 15).isActive = true
         icon.centerXAnchor.constraint(equalTo: button.centerXAnchor).isActive = true
         if iconName != ""{
             icon.image = UIImage(named: iconName)
+        }
+        if iconName == "paint"{
+            icon.image = UIImage(systemName: "paintpalette.fill")
+            icon.tintColor = .white
+        }else if iconName == "question"{
+            icon.image = UIImage(systemName: "questionmark.circle.fill")
+            icon.tintColor = .white
+        }else if iconName == "info"{
+            icon.image = UIImage(systemName: "info.circle.fill")
+            icon.tintColor = .white
+        }else if iconName == "contact"{
+            icon.image = UIImage(systemName: "person.3.fill")
+            icon.tintColor = .white
+        }else if iconName == "terminal"{
+            icon.image = UIImage(systemName: "terminal.fill")
+            icon.tintColor = .white
+        }else if iconName == "map"{
+            icon.image = UIImage(systemName: "map.fill")
+            icon.tintColor = .white
         }
         icon.contentMode = .scaleAspectFit
         
@@ -156,3 +184,8 @@ class blockButton: UIButton{
         fatalError("This class does not support NSCoding")
     }
 }
+
+let APPINFORMATION = """
+目前版本：version 1\n
+v1為109學年度發行\n
+"""

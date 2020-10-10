@@ -131,6 +131,7 @@ class ColorVC: UIViewController {
             //change view to sign in view
             colors.ChangeDefaultColor(_sender: _sender, r: _sender.r!, g: _sender.g!, b: _sender.b!, lr: _sender.lr!, lg: _sender.lg!, lb: _sender.lb!)
             let directView = self.storyboard?.instantiateViewController(identifier: "MenuTBC") as? MenuTBC
+            directView?.selectedIndex = 2
             self.view.window?.rootViewController = directView
             self.view.window?.makeKeyAndVisible()
         }))

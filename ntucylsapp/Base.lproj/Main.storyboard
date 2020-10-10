@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0Q-Ol-XbW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -43,25 +43,28 @@
             </objects>
             <point key="canvasLocation" x="-142" y="116"/>
         </scene>
-        <!--設定-->
+        <!--其他設定-->
         <scene sceneID="KfK-UB-JSh">
             <objects>
-                <viewController id="iHk-F2-FJl" customClass="SettingVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingvc" id="iHk-F2-FJl" customClass="SettingVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="54J-TA-9Yo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Wae-Am-gbw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="設定" id="YDk-9p-f5R"/>
+                    <navigationItem key="navigationItem" title="其他設定" id="YDk-9p-f5R"/>
                     <connections>
                         <segue destination="2sy-lQ-ibM" kind="show" identifier="PersonalInfoVC" id="0Kv-Ji-h67"/>
                         <segue destination="8XX-FV-tlW" kind="show" identifier="ColorVC" id="SyK-e0-4dJ"/>
+                        <segue destination="3l0-4O-gJr" kind="show" identifier="PTT" id="GyA-IJ-nc7"/>
+                        <segue destination="2Qb-S8-1vz" kind="show" identifier="Problem" id="b2B-UW-h3X"/>
+                        <segue destination="Wfa-Nr-gLd" kind="show" identifier="Map" id="Bry-OC-aLA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpm-77-Y7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3403" y="1603"/>
+            <point key="canvasLocation" x="4241" y="3009"/>
         </scene>
         <!--主題顏色-->
         <scene sceneID="BCJ-yh-WWY">
@@ -78,6 +81,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C55-AI-YDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4241" y="2296"/>
+        </scene>
+        <!--鄉服PTT-->
+        <scene sceneID="A9F-mK-j1V">
+            <objects>
+                <viewController id="3l0-4O-gJr" customClass="PTTWebVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MW0-7q-tJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cfa-cz-Ck1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="鄉服PTT" id="LQA-im-o0Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CR-m4-8ID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3403" y="3009"/>
+        </scene>
+        <!--瑞峰平面圖-->
+        <scene sceneID="Oto-dC-ffy">
+            <objects>
+                <viewController id="Wfa-Nr-gLd" customClass="MapVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XXp-Uc-qxm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="y2g-Bs-K8n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="瑞峰平面圖" id="a1b-ea-JpH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AcJ-Lf-6vs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5050.7246376811599" y="3008.7053571428569"/>
+        </scene>
+        <!--問題回報-->
+        <scene sceneID="FAz-DZ-mai">
+            <objects>
+                <viewController id="2Qb-S8-1vz" customClass="ProblemVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ie9-z4-gRX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1v0-1b-qzZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="問題回報" id="Utx-Jw-1PQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6N-lE-UhA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3403" y="3717"/>
         </scene>
         <!--個人資料-->
         <scene sceneID="tPI-II-eIm">
@@ -109,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hF-FL-rdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="1622"/>
+            <point key="canvasLocation" x="1332" y="1622"/>
         </scene>
         <!--好友-->
         <scene sceneID="cYh-Go-svy">
@@ -125,11 +176,28 @@
                     <connections>
                         <segue destination="W31-NM-sXS" kind="show" identifier="searchSegue" id="X86-W2-yu2"/>
                         <segue destination="FHo-Bd-a48" kind="show" identifier="InfoOfFriend" id="IaW-Y8-WhO"/>
+                        <segue destination="SGN-GZ-aWN" kind="show" identifier="blockPage" id="7fZ-Pe-JOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2EY-Qx-Mxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261" y="1622"/>
+            <point key="canvasLocation" x="2171" y="1622"/>
+        </scene>
+        <!--封鎖名單-->
+        <scene sceneID="jUH-i0-Dfu">
+            <objects>
+                <viewController id="SGN-GZ-aWN" customClass="BlockVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VyK-eW-5KX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="suR-Wi-7Lc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="封鎖名單" id="k23-mA-zpU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3JM-bF-HLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333" y="2360"/>
         </scene>
         <!--Add FriendVC-->
         <scene sceneID="5bf-5r-kOV">
@@ -145,23 +213,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBS-XM-LVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261" y="2362"/>
+            <point key="canvasLocation" x="2171" y="2360"/>
         </scene>
-        <!--主頁-->
-        <scene sceneID="36n-zw-ap1">
+        <!--近幾屆茗情-->
+        <scene sceneID="fhe-4L-wTa">
             <objects>
-                <viewController id="yMD-gZ-m79" customClass="FirstPageVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3HK-DN-k41">
+                <tableViewController id="TEZ-7u-7Kc" customClass="MingChinTableViewController" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t71-HI-43t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="aIA-Z1-WUW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MingChinIdentifier" id="YZK-5w-zGo" customClass="MingChinTVcell" customModule="ntucylsapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YZK-5w-zGo" id="Av1-lE-PbS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-Ly-10Y">
+                                            <rect key="frame" x="10" y="11.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Mg7-Ly-10Y" firstAttribute="centerY" secondItem="Av1-lE-PbS" secondAttribute="centerY" id="k40-yV-GgU"/>
+                                        <constraint firstItem="Mg7-Ly-10Y" firstAttribute="leading" secondItem="Av1-lE-PbS" secondAttribute="leading" constant="10" id="uw8-9R-ber"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mingChinTitleLabel" destination="Mg7-Ly-10Y" id="p6d-gC-ITa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TEZ-7u-7Kc" id="wTA-1o-eEa"/>
+                            <outlet property="delegate" destination="TEZ-7u-7Kc" id="65v-ZL-9MG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="近幾屆茗情" id="nbQ-eY-e4H"/>
+                    <connections>
+                        <segue destination="hcX-7x-mxl" kind="show" identifier="mingchinpdf" id="djY-9z-NV6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKd-lH-pUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="883"/>
+        </scene>
+        <!--Ming ChinPDFVC-->
+        <scene sceneID="Qbl-Dt-HER">
+            <objects>
+                <viewController id="hcX-7x-mxl" customClass="MingChinPDFVC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OQK-ah-6tm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1fo-Jd-BB4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="主頁" id="sYv-Yg-k2s"/>
+                    <navigationItem key="navigationItem" id="3Ho-fc-Wow"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mWQ-yO-8PH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyn-hf-lRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="883"/>
+            <point key="canvasLocation" x="-265" y="1595"/>
         </scene>
         <!--MenuTBC-->
         <scene sceneID="Aux-zO-H4u">
@@ -173,7 +288,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="yMD-gZ-m79" kind="relationship" relationship="viewControllers" id="jON-Og-P6g"/>
+                        <segue destination="1t8-fD-71A" kind="relationship" relationship="viewControllers" id="jON-Og-P6g"/>
                         <segue destination="BVJ-xf-ThL" kind="relationship" relationship="viewControllers" id="yUM-5Y-XPt"/>
                         <segue destination="xXd-ur-hvk" kind="relationship" relationship="viewControllers" id="I2H-f0-ATa"/>
                     </connections>
@@ -182,11 +297,11 @@
             </objects>
             <point key="canvasLocation" x="1120" y="116"/>
         </scene>
-        <!--設定-->
+        <!--其他-->
         <scene sceneID="kuE-Ko-eoP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xXd-ur-hvk" customClass="SettingNC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="設定" id="khs-QK-Hq7"/>
+                    <tabBarItem key="tabBarItem" title="其他" image="icon_setting" id="khs-QK-Hq7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXx-Fi-poq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -199,13 +314,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuk-eD-TQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4313.04347826087" y="882.58928571428567"/>
+            <point key="canvasLocation" x="3403" y="883"/>
         </scene>
         <!--好友-->
         <scene sceneID="OuX-c2-OAa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BVJ-xf-ThL" customClass="FriendNC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="好友" id="DOu-PO-wtA"/>
+                    <tabBarItem key="tabBarItem" title="好友" image="icon_friend" id="DOu-PO-wtA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yIh-DC-7XO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -218,10 +333,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGr-a1-7sJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263.768115942029" y="882.58928571428567"/>
+            <point key="canvasLocation" x="2172.463768115942" y="882.58928571428567"/>
+        </scene>
+        <!--茗情-->
+        <scene sceneID="Uoj-wf-e98">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1t8-fD-71A" customClass="MingChinNC" customModule="ntucylsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="茗情" image="icon_mingchin" id="sYv-Yg-k2s"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iqc-In-FIc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TEZ-7u-7Kc" kind="relationship" relationship="rootViewController" id="bcD-1f-hUa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0da-Bi-nPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457.97101449275368" y="882.58928571428567"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icon_friend" width="34.5" height="32.5"/>
+        <image name="icon_mingchin" width="34.5" height="34"/>
+        <image name="icon_setting" width="34.5" height="34.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -15,11 +15,15 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>允許「台大鄉服」進入您的相簿，待您選定照片後將會上傳，作為大頭貼運途使用。請勿上傳任何有關性暗示、暴力、毒品、犯罪等不當內容，違者查核後將遭停權使用。\nEnable \"NTUCYLS\"to access your camera roll to upload your photos and save ones you've taken with tha app for your profile image. Please do NOT upload any material contains mature/suggestive themes, violence, drug, crime, etc. Violators will be suspended.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>允許「台大鄉服」進入您的相簿，待您選定照片後將會上傳，作為大頭貼運途使用。請勿上傳任何有關性暗示、暴力、毒品、犯罪等不當內容，違者查核後將遭停權使用。\nEnable \"NTUCYLS\"to access your camera roll to upload your photos and save ones you've taken with tha app for your profile image. Please do NOT upload any material contains mature/suggestive themes, violence, drug, crime, etc. Violators will be suspended.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>bamboo.ttf</string>
@@ -65,7 +69,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Please allow accessing your photo library</string>
 </dict>
 </plist>
